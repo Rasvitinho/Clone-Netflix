@@ -2,6 +2,7 @@
 :root{
     --vermelho: #e50914;
     --preta: #141414;
+    --dark: #686868;
 }
 
 *{
@@ -136,53 +137,43 @@ header nav a:hover{
 }
 
 
-.infogerais{
-    max-width: 980px;
-    margin: 20px auto 0;
-    padding: 0 4%;
-    color: grey;  
-    align-items: center;
-}
-
-.rodape-redes{
-    margin-bottom: 2em;
-    padding: 0px 0px;
-
-}
-
-.linksrodape-wrapper{
-    font-size: 15px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    -webkit-box-align: start;
-    margin: 0 0 4px 0;    
-    color: gray;   
-    justify-content: space-around;
-    text-decoration: none;
+.link {
+    padding: 50px;
+    margin-left: 150px;
+  }
+  
+  .sub-links ul {
     list-style: none;
-}
+    padding: 0;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .sub-links a {
+    color: var(--dark);
+    text-decoration: none;
+  }
+  
+  .sub-links a:hover {
+    color: var(--dark);
+    text-decoration: underline;
+  }
+  
+  .logos a{
+    padding: 10px;
+  }
+  
+  .logos {
+    color: #686868;
+    margin: 0 0 20px;
+  }
+  
 
-.infogerais .linksrodape-wrapper-content{
-    
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-    
-}
+  footer {
+    padding: 20px;
+    text-align: center;
+    color: var(--dark);
+    margin: 10px;
+  }
 
-.service-code{
-
-background: 0 0;
-color: grey;
-border: solid 1px grey;
-margin-bottom: 20px;
-padding: 10px;
-}
- 
-.member-footer-copyright{
-padding: 0 0 5px;
-margin: 0 0 5px;
-}
